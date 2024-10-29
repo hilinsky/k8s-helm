@@ -6,7 +6,7 @@ metadata:
     nfs.io/storage-path: nginx-app
   name: pv-claim-helm
   labels:
-    {{- include "first-app.labels" . | nindent 4 }}
+    {{- include "nginx-app.labels" . | nindent 4 }}
 spec:
   accessModes:
     - ReadWriteMany
