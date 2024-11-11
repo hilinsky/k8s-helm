@@ -5,7 +5,6 @@ metadata:
   annotations:
     nfs.io/storage-path: {{ include "jenkins-app.fullname" . }}
   name: pv-claim-helm
-  namespace: {{ template "jenkins-app.namespace" . }}
   labels:
     {{- include "jenkins-app.labels" . | nindent 4 }}
 spec:
