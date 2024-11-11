@@ -4,7 +4,7 @@ kind: PersistentVolumeClaim
 metadata:
   annotations:
     nfs.io/storage-path: nginx-app
-  name: pv-claim-helm
+  name: pv-claim-nginx
   labels:
     {{- include "nginx-app.labels" . | nindent 4 }}
 spec:

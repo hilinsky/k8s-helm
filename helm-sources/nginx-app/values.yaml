@@ -107,9 +107,9 @@ autoscaling:
 
 # Additional volumes on the output Deployment definition.
 volumes:
-  - name: persistent-storage
+  - name: persistent-storage-nginx
     persistentVolumeClaim:
-      claimName: pv-claim-helm
+      claimName: pv-claim-nginx
 # - name: foo
 #   secret:
 #     secretName: mysecret
@@ -117,7 +117,7 @@ volumes:
 
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts:
-  - name: persistent-storage
+  - name: persistent-storage-nginx
     mountPath: "/usr/share/nginx/html"
 # - name: foo
 #   mountPath: "/etc/foo"
