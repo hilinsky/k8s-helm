@@ -3,9 +3,9 @@ entries:
   jenkins-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-11T13:50:22.310977488Z"
+    created: "2024-11-11T14:42:27.93554856Z"
     description: A Helm chart for Kubernetes
-    digest: 2d47e96bf8e32e9edab332cf49c8a3cd650cbf1c04eb9a6d7ff9350af388bceb
+    digest: 5ff6a72dfd66789b03c0b0e03def5c3f2b2f03415c9c0f0c3dbc171eae226f8e
     name: jenkins-app
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-11T13:50:22.310062295Z"
+    created: "2024-11-11T14:42:27.93417432Z"
     description: A Helm chart for Kubernetes
     digest: 038f28f74992efc6c2940582e8d4ca6f4064b3771eae7b6b83fac07e824efcaa
     name: jenkins-app
@@ -24,7 +24,7 @@ entries:
   nginx-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-11T13:50:22.312337157Z"
+    created: "2024-11-11T14:42:27.937384699Z"
     description: A Helm chart for Kubernetes
     digest: eeb3214bbd8ea8b4a747dc0c9ca9af6e09fbeb3961ac1e26e76c20f81b4c175f
     name: nginx-app
@@ -34,7 +34,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-11T13:50:22.311662143Z"
+    created: "2024-11-11T14:42:27.936408512Z"
     description: A Helm chart for Kubernetes
     digest: 6f487ec0ebf789cfb17b7bb6642a099b4786d086f63d8a43c8a68c0aedfd4b52
     name: nginx-app
@@ -42,4 +42,4 @@ entries:
     urls:
     - https://hilinsky.github.io/k8s-helm/helm-releases/nginx-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-11T13:50:22.308644478Z"
+generated: "2024-11-11T14:42:27.932586342Z"

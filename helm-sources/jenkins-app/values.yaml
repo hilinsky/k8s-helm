@@ -129,7 +129,7 @@ volumes:
     nfs:
       server: 192.168.37.105
       path: /mnt/IT-Academy/nfs-data/sa2-29-24/hilinsky/jobs
-  - name: persistent-storage
+  - name: persistent-storage-jenkins
     persistentVolumeClaim:
       claimName: pv-claim-jenkins
 # Additional volumeMounts on the output Deployment definition.
@@ -145,7 +145,7 @@ volumeMounts:
   - name: jenkins-job
     mountPath: /var/jenkins_home/jobs/Ping/config.xml
     subPath: config.xml
-  - name: persistent-storage
+  - name: persistent-storage-jenkins
     mountPath: /var/jenkins_home
 
 admin:
