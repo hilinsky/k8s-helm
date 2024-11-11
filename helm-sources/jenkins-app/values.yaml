@@ -131,7 +131,7 @@ volumes:
       path: /mnt/IT-Academy/nfs-data/sa2-29-24/hilinsky/jobs
   - name: persistent-storage
     persistentVolumeClaim:
-      claimName: pv-claim-helm
+      claimName: pv-claim-jenkins
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts:
   - name: jenkins-auth-config
