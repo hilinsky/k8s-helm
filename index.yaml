@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  jenkins-app:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2024-11-12T12:25:57.34206676Z"
+    description: A Jenkins helm chart for Kubernetes
+    digest: 68e80766594e0e8a8ef50f94901fadd949be37a57b8e23d728b6e02a0d8f36e2
+    name: jenkins-app
+    type: application
+    urls:
+    - https://hilinsky.github.io/k8s-helm/helm-releases/jenkins-app-0.1.0.tgz
+    version: 0.1.0
   nginx-app:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2024-11-12T07:26:54.227320271Z"
+    created: "2024-11-12T12:25:57.343153284Z"
     description: A Nginx helm chart for Kubernetes
     digest: c1ecc29f8b3198e84b621ae0b3e69e961bdb760e152ff51ec6ea3c72fe038ba7
     name: nginx-app
@@ -11,4 +22,4 @@ entries:
     urls:
     - https://hilinsky.github.io/k8s-helm/helm-releases/nginx-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-12T07:26:54.226325964Z"
+generated: "2024-11-12T12:25:57.340857485Z"

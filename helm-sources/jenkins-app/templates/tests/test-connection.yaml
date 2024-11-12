@@ -6,7 +6,6 @@ metadata:
     {{- include "jenkins-app.labels" . | nindent 4 }}
   annotations:
     "helm.sh/hook": test
-  namespace: {{ template "jenkins-app.namespace" .}}
 spec:
   containers:
     - name: wget

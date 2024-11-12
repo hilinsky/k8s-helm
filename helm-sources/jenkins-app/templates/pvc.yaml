@@ -3,7 +3,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   annotations:
-    nfs.io/storage-path: {{ include "jenkins-app.fullname" . }}
+    nfs.io/storage-path: jenkins-app
   name: pv-claim-jenkins
   labels:
     {{- include "jenkins-app.labels" . | nindent 4 }}

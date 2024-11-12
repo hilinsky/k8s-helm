@@ -1,8 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ template "jenkins-app.fullname" . }}
-  namespace: {{ template "jenkins-app.namespace" . }}
+  name: {{ include "jenkins-app.fullname" . }}
 data:
   basic-security.groovy: |
     #!groovy
@@ -22,8 +21,7 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ template "jenkins-app.fullname" . }}-config
-  namespace: {{ template "jenkins-app.namespace" . }}
+  name: {{ include "jenkins-app.fullname" . }}-config
 data:
   jenkins.yaml: |
         jenkins:
@@ -55,7 +53,7 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ template "jenkins-app.fullname" . }}-job
+  name: {{ include "jenkins-app.fullname" . }}-job
 data:
   config.xml: |
       <?xml version='1.1' encoding='UTF-8'?>

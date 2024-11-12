@@ -30,20 +30,6 @@ spec:
       serviceAccountName: {{ include "jenkins-app.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
-#      initContainers:
-#        - name: {{ .Chart.Name }}-init
-#          image: busybox
-#          command:
-#          - chown
-#          - -R
-#          - 0:0
-#          - /var/jenkins_home/jobs/Test
-#          securityContext:
-#            runAsUser: 0
-#            privileged: true
-#          volumeMounts:
-#          - name: persistent-storage
-#            mountPath: /var/jenkins_home
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
